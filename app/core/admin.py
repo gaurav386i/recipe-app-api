@@ -20,10 +20,10 @@ class UserAdmin(BaseUserAdmin):
         (_('Important dates'), {'fields': ('last_login',)})
 
     )
-    add_fields = (
+    add_fieldsets = (
        (None, {
            'classes': ('wide',),
-           'fields': ('email', 'pasword1', 'password2')
+           'fields': ('email', 'password1', 'password2')
        }),
     )
 
